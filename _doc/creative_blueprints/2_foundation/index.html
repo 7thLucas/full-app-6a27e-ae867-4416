@@ -1,40 +1,100 @@
 <style>
-  .mode-landscape .sl-foundation-layout { display: flex; flex-direction: row; align-items: stretch; min-height: 100%; }
-  .mode-landscape .sl-content-panel { width: 55%; padding: 3rem; display: flex; flex-direction: column; justify-content: center; }
-  .mode-landscape .sl-visual-panel { width: 45%; min-height: 0; }
-  .mode-portrait .sl-foundation-layout { display: flex; flex-direction: column; min-height: 100%; }
-  .mode-portrait .sl-content-panel { padding: 2rem 1.5rem; }
-  .mode-portrait .sl-visual-panel { min-height: 280px; }
+.mode-landscape .sl-layout { flex-direction: row; }
+.mode-portrait .sl-layout { flex-direction: column; }
+.mode-landscape .sl-problem { width: 48%; }
+.mode-landscape .sl-solution { width: 52%; }
+.mode-portrait .sl-problem { width: 100%; }
+.mode-portrait .sl-solution { width: 100%; }
 </style>
 <section class="w-full h-full overflow-auto bg-white">
-  <div class="sl-foundation-layout">
-    <div class="sl-content-panel">
-      <div class="flex items-center justify-between mb-4">
-        <span class="inline-block text-xs font-semibold tracking-widest uppercase" style="color:#D946A6;">Foundation</span>
-        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 border rounded-full" style="background-color:#D946A6; border-color:#D946A630;">
-          <span class="text-xs font-semibold" style="color:#ffffff;">Validated</span>
+  <div class="sl-layout flex h-full p-10 gap-5">
 
-        </span>
-      </div>
-      <h1 class="text-3xl font-bold text-slate-900 leading-tight mb-8">Manual flower inventory management leads to spoilage, missed deliveries, and operational chaos</h1>
-      <div class="space-y-5">
-        <div class="border-l-4 pl-4 relative" style="border-color:#F43F5E;">
-          <h2 class="text-sm font-semibold uppercase tracking-wide mb-1" style="color:#E11D48;">The Problem</h2>
-          <p class="text-slate-700 leading-relaxed text-sm">Florist shop owners face critical operational bottlenecks: perishable inventory expires without proper tracking, custom bouquet orders get lost in manual spreadsheets, delivery schedules conflict and miss time-sensitive windows, and valuable flowers spoil before sale—directly cutting into profit margins and damaging customer trust.</p>
+    <!-- Left: The Problem (dark zone) -->
+    <div class="sl-problem bg-emerald-900 rounded-2xl p-8 flex flex-col justify-between">
+      <div class="flex flex-col gap-5">
+        <div>
+          <span class="text-emerald-300 text-xs font-bold uppercase tracking-widest block mb-3">The Problem</span>
+          <h2 class="text-2xl font-black text-white leading-snug">Running a Florist Shop Is Harder Than It Looks</h2>
         </div>
-        <div class="border-l-4 pl-4 relative" style="border-color:#D946A6;">
-          <h2 class="text-sm font-semibold uppercase tracking-wide mb-1" style="color:#D946A6;">The Solution</h2>
-          <p class="text-slate-700 leading-relaxed text-sm">Florist shop owners juggle multiple challenges: tracking perishable flower stock across multiple storage conditions, coordinating complex bouquet orders with custom arrangements, managing delivery schedules manually, and ultimately losing revenue to wilted inventory and missed delivery windows. Without visibility into flower freshness and order priorities, shops struggle to optimize fulfillment, waste precious product, and disappoint customers.</p>
+
+        <div class="flex flex-col gap-4">
+          <!-- Pain point 1 -->
+          <div class="flex gap-3 items-start">
+            <div class="w-1 h-full min-h-full bg-amber-400 rounded-full flex-shrink-0 mt-1" style="min-height:2.5rem;"></div>
+            <div>
+              <p class="text-white font-semibold text-sm">Perishable Inventory</p>
+              <p class="text-emerald-200 text-xs leading-relaxed mt-0.5">Flowers expire in days. Over-order and you waste money. Under-order and you lose sales — there's no margin for error.</p>
+            </div>
+          </div>
+          <!-- Pain point 2 -->
+          <div class="flex gap-3 items-start">
+            <div class="w-1 bg-amber-400 rounded-full flex-shrink-0 mt-1" style="min-height:2.5rem;"></div>
+            <div>
+              <p class="text-white font-semibold text-sm">Fragmented Operations</p>
+              <p class="text-emerald-200 text-xs leading-relaxed mt-0.5">Paper order books and spreadsheets don't connect inventory to orders — or orders to deliveries. Nothing talks to anything.</p>
+            </div>
+          </div>
+          <!-- Pain point 3 -->
+          <div class="flex gap-3 items-start">
+            <div class="w-1 bg-amber-400 rounded-full flex-shrink-0 mt-1" style="min-height:2.5rem;"></div>
+            <div>
+              <p class="text-white font-semibold text-sm">Missed & Late Deliveries</p>
+              <p class="text-emerald-200 text-xs leading-relaxed mt-0.5">Without coordinated scheduling, arrangements arrive late or wilted — damaging customer trust when it matters most.</p>
+            </div>
+          </div>
         </div>
-        <div class="border-l-4 border-sky-500 pl-4 relative"><h2 class="text-sm font-semibold text-sky-600 uppercase tracking-wide mb-1">Target Audience</h2><p class="text-slate-700 leading-relaxed text-sm">Independent and small-chain florist shop owners managing 5–50+ daily orders</p></div>
-        <div class="border-l-4 border-amber-500 pl-4 relative"><h2 class="text-sm font-semibold text-amber-600 uppercase tracking-wide mb-1">Personal Motivation</h2><p class="text-slate-700 leading-relaxed text-sm">Create a calm, organized operational backbone that lets florists focus on creativity and customer relationships instead of logistics chaos</p></div>
       </div>
-      <div class="mt-6 flex flex-wrap gap-2"><span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full">Inventory Management</span><span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full">Order Fulfillment</span><span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full">Perishables</span><span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full">Delivery Logistics</span><span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full">Retail Operations</span></div>
-      <div class="mt-8"><data-attribution /></div>
+
+      <!-- Stat callout -->
+      <div class="mt-4 border border-emerald-700 rounded-xl px-4 py-3">
+        <p class="text-amber-400 text-xs font-bold uppercase tracking-widest mb-1">Industry Reality</p>
+        <p class="text-white text-sm font-semibold">15–25% of perishable inventory is wasted in the average florist shop.</p>
+      </div>
     </div>
-    <div class="sl-visual-panel relative">
-      <img src="http://localhost:8001/common/image-generation?prompt=florist+shop+owner+managing+disorganized+flower+inventory+and+order+chaos&amp;keyspace=xxt1ts5v&amp;user_id=4416" alt="visual" class="w-full h-full object-cover" />
-      <div class="absolute inset-0 bg-gradient-to-r from-white via-transparent to-transparent opacity-40"></div>
+
+    <!-- Right: The Solution (light zone) -->
+    <div class="sl-solution flex flex-col justify-between">
+      <div class="flex flex-col gap-5">
+        <div>
+          <span class="text-emerald-600 text-xs font-bold uppercase tracking-widest block mb-3">The Solution</span>
+          <h2 class="text-2xl font-black text-slate-900 leading-snug">One Platform. Everything Connected.</h2>
+          <p class="text-slate-500 text-sm leading-relaxed mt-3">BloomOps brings inventory, orders, and deliveries into a single coherent system — with freshness-first intelligence that catches spoilage risk before it costs you.</p>
+        </div>
+
+        <!-- Solution pillars grid -->
+        <div class="grid grid-cols-2 gap-3">
+          <div class="bg-emerald-50 border border-emerald-100 rounded-xl p-4">
+            <div class="w-5 h-5 bg-emerald-600 rounded-md mb-2"></div>
+            <p class="text-emerald-800 font-semibold text-sm">Freshness Tracking</p>
+            <p class="text-slate-500 text-xs mt-1 leading-relaxed">Per-variety arrival dates and expiry alerts before flowers go to waste.</p>
+          </div>
+          <div class="bg-emerald-50 border border-emerald-100 rounded-xl p-4">
+            <div class="w-5 h-5 bg-emerald-600 rounded-md mb-2"></div>
+            <p class="text-emerald-800 font-semibold text-sm">Order Pipeline</p>
+            <p class="text-slate-500 text-xs mt-1 leading-relaxed">From intake to doorstep — every order fully tracked, every step of the way.</p>
+          </div>
+          <div class="bg-emerald-50 border border-emerald-100 rounded-xl p-4">
+            <div class="w-5 h-5 bg-emerald-600 rounded-md mb-2"></div>
+            <p class="text-emerald-800 font-semibold text-sm">Delivery Scheduling</p>
+            <p class="text-slate-500 text-xs mt-1 leading-relaxed">Calendar, driver assignments, and area routing — fully coordinated.</p>
+          </div>
+          <div class="bg-amber-50 border border-amber-100 rounded-xl p-4">
+            <div class="w-5 h-5 bg-amber-500 rounded-md mb-2"></div>
+            <p class="text-amber-800 font-semibold text-sm">Spoilage Intelligence</p>
+            <p class="text-slate-500 text-xs mt-1 leading-relaxed">At-risk stock surfaced proactively — act before flowers go to waste.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visual strip -->
+      <div class="rounded-xl overflow-hidden" style="height: 90px;">
+        <img
+          src="https://api-stag.qb-deck.quantumbyte.ai/common/image-generation?prompt=calm%20organized%20modern%20florist%20shop%20interior%20with%20neatly%20arranged%20fresh%20flowers%20and%20clean%20workspace%2C%20soft%20natural%20light%2C%20professional%20editorial"
+          alt="Organized florist shop"
+          class="w-full h-full object-cover"
+        />
+      </div>
     </div>
+
   </div>
 </section>
