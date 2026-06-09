@@ -1,36 +1,45 @@
 <style>
-  .mode-landscape .sl-metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; }
+  .mode-landscape .sl-metrics-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
   .mode-portrait .sl-metrics-grid { display: flex; flex-direction: column; gap: 1rem; }
+  .mode-landscape .sl-roi-inner { flex-direction: row; align-items: center; gap: 2.5rem; }
+  .mode-portrait .sl-roi-inner { flex-direction: column; gap: 1.25rem; }
+  .mode-landscape .sl-roi-right { border-left: 1px solid rgba(255,255,255,0.2); padding-left: 2.5rem; }
+  .mode-portrait .sl-roi-right { border-top: 1px solid rgba(255,255,255,0.2); padding-top: 1.25rem; }
 </style>
 <section class="w-full h-full overflow-auto bg-white p-10">
   <div class="flex items-center gap-3 mb-2">
-    <span class="text-xs font-bold tracking-widest uppercase" style="color:#D946A6;">Outcomes</span>
+    <span class="text-emerald-600 text-xs font-bold tracking-widest uppercase">Outcomes</span>
   </div>
-  <h2 class="text-4xl font-bold text-slate-900 mb-6">Quantifiable Benefits</h2>
-  <p class="text-lg text-slate-600 mb-10 max-w-3xl">Fresh Bloom reduces operational friction, cuts waste, and keeps customers delighted with on-time, fresh deliveries. Shop owners gain back hours each week while protecting margin on every arrangement sold.</p>
-  <div class="sl-metrics-grid mb-12"><article class="flex-1 min-w-[200px] bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
-        <h3 class="text-3xl font-bold leading-none mb-2" style="color:#D946A6;">40%</h3>
-        <h4 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-2">Reduction in flower spoilage</h4>
-        <p class="text-slate-600 text-sm leading-relaxed">Real-time tracking and automated alerts prevent waste before it happens</p>
-      </article>
-      <article class="flex-1 min-w-[200px] bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
-        <h3 class="text-3xl font-bold leading-none mb-2" style="color:#D946A6;">3x</h3>
-        <h4 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-2">Faster order fulfillment</h4>
-        <p class="text-slate-600 text-sm leading-relaxed">Smart matching of inventory to orders eliminates manual searching and coordination</p>
-      </article>
-      <article class="flex-1 min-w-[200px] bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
-        <h3 class="text-3xl font-bold leading-none mb-2" style="color:#D946A6;">95%+</h3>
-        <h4 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-2">On-time delivery rate</h4>
-        <p class="text-slate-600 text-sm leading-relaxed">Optimized schedules and conflict detection keep promises to customers</p>
-      </article></div>
-  <div class="rounded-2xl p-8" style="background-color:#EC4899;">
-    <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
-      <div class="flex-1">
-        <h3 class="text-sm font-bold uppercase tracking-widest text-white/70 mb-2">Primary ROI</h3>
-        <p class="text-4xl font-black text-white">ROI in 6–8 weeks</p>
+  <h2 class="text-4xl font-black text-slate-900 mb-4">Quantifiable Benefits</h2>
+  <p class="text-lg text-slate-500 mb-8 max-w-3xl">BloomOps cuts waste, protects revenue, and keeps customers delighted with on-time deliveries. Shop owners reclaim hours every day while turning industry-average spoilage into recovered margin.</p>
+
+  <div class="sl-metrics-grid mb-10">
+    <article class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+      <h3 class="text-3xl font-black leading-none mb-2 text-emerald-600">30%+</h3>
+      <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Less perishable waste</h4>
+      <p class="text-slate-600 text-sm leading-relaxed">Freshness alerts, FIFO guidance, and spoilage intelligence act before flowers are ever lost</p>
+    </article>
+    <article class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+      <h3 class="text-3xl font-black leading-none mb-2 text-emerald-600">2+ hrs</h3>
+      <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Saved per day</h4>
+      <p class="text-slate-600 text-sm leading-relaxed">Reclaimed from manual inventory checks, order coordination, and delivery juggling</p>
+    </article>
+    <article class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+      <h3 class="text-3xl font-black leading-none mb-2 text-emerald-600">95%+</h3>
+      <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">On-time delivery rate</h4>
+      <p class="text-slate-600 text-sm leading-relaxed">Structured scheduling and proactive dispatch alerts keep every promise to customers</p>
+    </article>
+  </div>
+
+  <div class="rounded-2xl p-8 bg-emerald-900">
+    <div class="flex sl-roi-inner">
+      <div class="flex-shrink-0">
+        <h3 class="text-xs font-bold uppercase tracking-widest text-emerald-300 mb-2">Industry Baseline</h3>
+        <p class="text-4xl font-black text-white">15–25%</p>
+        <p class="text-emerald-300 text-sm mt-1 font-semibold">wasted, every week</p>
       </div>
-      <div class="flex-[2] text-white/90 text-xl leading-relaxed font-medium border-l-0 md:border-l border-white/20 md:pl-8">
-        Average florist recovers platform cost through spoilage reduction and increased order throughput alone
+      <div class="flex-1 sl-roi-right">
+        <p class="text-white text-xl leading-relaxed font-medium">Average florist shops lose 15–25% of perishable inventory every week. BloomOps turns that waste directly into recovered margin.</p>
       </div>
     </div>
   </div>
