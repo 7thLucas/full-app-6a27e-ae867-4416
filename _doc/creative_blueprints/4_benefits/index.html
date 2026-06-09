@@ -1,0 +1,72 @@
+<style>
+.mode-landscape .sl-metrics { grid-template-columns: repeat(4, 1fr); }
+.mode-portrait .sl-metrics { grid-template-columns: repeat(2, 1fr); }
+.mode-landscape .sl-roi { flex-direction: row; gap: 2.5rem; align-items: center; }
+.mode-portrait .sl-roi { flex-direction: column; gap: 1.5rem; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-10 gap-5">
+
+    <!-- Header -->
+    <div class="flex flex-col gap-1">
+      <span class="text-emerald-600 text-xs font-bold uppercase tracking-widest">Results</span>
+      <h2 class="text-4xl font-black text-slate-900 leading-tight">The Business Case Is Clear</h2>
+    </div>
+
+    <!-- Metric cards -->
+    <div class="sl-metrics grid gap-4">
+
+      <div class="bg-slate-50 border border-slate-100 rounded-2xl p-5">
+        <p class="text-emerald-600 text-xs font-bold uppercase tracking-widest mb-2">Spoilage Cut</p>
+        <p class="text-4xl font-black text-slate-900 leading-none">30%+</p>
+        <p class="text-slate-400 text-xs mt-2 leading-relaxed">Reduction in perishable waste through freshness alerts and FIFO guidance</p>
+      </div>
+
+      <div class="bg-slate-50 border border-slate-100 rounded-2xl p-5">
+        <p class="text-emerald-600 text-xs font-bold uppercase tracking-widest mb-2">On-Time Delivery</p>
+        <p class="text-4xl font-black text-slate-900 leading-none">95%+</p>
+        <p class="text-slate-400 text-xs mt-2 leading-relaxed">Target success rate through structured scheduling and proactive dispatch alerts</p>
+      </div>
+
+      <div class="bg-slate-50 border border-slate-100 rounded-2xl p-5">
+        <p class="text-emerald-600 text-xs font-bold uppercase tracking-widest mb-2">Time Saved</p>
+        <p class="text-4xl font-black text-slate-900 leading-none">2h+</p>
+        <p class="text-slate-400 text-xs mt-2 leading-relaxed">Per day reclaimed from manual inventory checks and order coordination</p>
+      </div>
+
+      <div class="bg-amber-50 border border-amber-100 rounded-2xl p-5">
+        <p class="text-amber-600 text-xs font-bold uppercase tracking-widest mb-2">Current Waste</p>
+        <p class="text-4xl font-black text-slate-900 leading-none">15–25%</p>
+        <p class="text-slate-400 text-xs mt-2 leading-relaxed">Of perishable inventory lost in the average florist shop — recoverable with BloomOps</p>
+      </div>
+
+    </div>
+
+    <!-- ROI summary block -->
+    <div class="sl-roi bg-emerald-900 rounded-2xl p-8 flex flex-1">
+
+      <div class="flex-1">
+        <p class="text-emerald-400 text-xs font-bold uppercase tracking-widest mb-3">The BloomOps Difference</p>
+        <h3 class="text-2xl font-black text-white leading-tight mb-3">Stop Losing Money to Wilted Flowers</h3>
+        <p class="text-emerald-200 text-sm leading-relaxed">Every unsold, spoiled stem is a direct loss to your bottom line. BloomOps gives shop owners the visibility to act before flowers go to waste — and the structure to ensure every order arrives exactly as intended, every time.</p>
+      </div>
+
+      <div class="flex flex-col gap-2.5">
+        <div class="bg-emerald-800 rounded-xl px-5 py-3 text-center">
+          <p class="text-white font-bold text-sm">Inventory + Orders + Deliveries</p>
+          <p class="text-emerald-400 text-xs mt-0.5">One unified system</p>
+        </div>
+        <div class="bg-emerald-800 rounded-xl px-5 py-3 text-center">
+          <p class="text-white font-bold text-sm">Freshness-First Intelligence</p>
+          <p class="text-emerald-400 text-xs mt-0.5">Proactive, not reactive</p>
+        </div>
+        <div class="bg-emerald-800 rounded-xl px-5 py-3 text-center">
+          <p class="text-white font-bold text-sm">Owner · Staff · Driver</p>
+          <p class="text-emerald-400 text-xs mt-0.5">Role-based access for the whole team</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
