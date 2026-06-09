@@ -1,0 +1,69 @@
+<style>
+.mode-landscape .sl-grid { grid-template-columns: repeat(3, 1fr); }
+.mode-portrait .sl-grid { grid-template-columns: repeat(2, 1fr); }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-10 gap-5">
+
+    <!-- Header -->
+    <div class="flex flex-col gap-1">
+      <span class="text-emerald-600 text-xs font-bold uppercase tracking-widest">Core Features</span>
+      <h2 class="text-4xl font-black text-slate-900 leading-tight">Built for Every Role in Your Shop</h2>
+    </div>
+
+    <!-- Persona chips -->
+    <div class="flex gap-2">
+      <span class="bg-emerald-700 text-white text-xs font-semibold px-4 py-1.5 rounded-full">Shop Owner</span>
+      <span class="bg-slate-100 text-slate-500 text-xs font-semibold px-4 py-1.5 rounded-full">Shop Staff</span>
+      <span class="bg-slate-100 text-slate-500 text-xs font-semibold px-4 py-1.5 rounded-full">Delivery Driver</span>
+    </div>
+
+    <!-- Feature cards grid -->
+    <div class="sl-grid grid gap-4 flex-1">
+
+      <!-- 1. Smart Inventory -->
+      <div class="bg-slate-50 rounded-2xl p-5 flex flex-col gap-2">
+        <div class="w-6 h-6 bg-emerald-600 rounded-md flex-shrink-0"></div>
+        <p class="text-slate-900 font-bold text-sm">Smart Inventory</p>
+        <p class="text-slate-500 text-xs leading-relaxed">Track every flower variety by stock level, arrival date, and freshness window with automatic FIFO guidance.</p>
+      </div>
+
+      <!-- 2. Order Pipeline -->
+      <div class="bg-slate-50 rounded-2xl p-5 flex flex-col gap-2">
+        <div class="w-6 h-6 bg-emerald-600 rounded-md flex-shrink-0"></div>
+        <p class="text-slate-900 font-bold text-sm">Order Pipeline</p>
+        <p class="text-slate-500 text-xs leading-relaxed">Full order lifecycle — Intake → Preparation → Ready → Dispatched → Delivered — with customer details and special instructions.</p>
+      </div>
+
+      <!-- 3. Delivery Scheduling -->
+      <div class="bg-slate-50 rounded-2xl p-5 flex flex-col gap-2">
+        <div class="w-6 h-6 bg-emerald-600 rounded-md flex-shrink-0"></div>
+        <p class="text-slate-900 font-bold text-sm">Delivery Scheduling</p>
+        <p class="text-slate-500 text-xs leading-relaxed">Calendar views, driver assignments, and area-grouped routing to keep every delivery on time.</p>
+      </div>
+
+      <!-- 4. Spoilage Alerts — featured / highlighted -->
+      <div class="bg-emerald-900 rounded-2xl p-5 flex flex-col gap-2">
+        <div class="w-6 h-6 bg-amber-400 rounded-md flex-shrink-0"></div>
+        <p class="text-white font-bold text-sm">Spoilage Intelligence</p>
+        <p class="text-emerald-200 text-xs leading-relaxed">Proactive at-risk alerts with days-to-expiry counters and same-day use recommendations before flowers go to waste.</p>
+      </div>
+
+      <!-- 5. Stock Reservation -->
+      <div class="bg-slate-50 rounded-2xl p-5 flex flex-col gap-2">
+        <div class="w-6 h-6 bg-emerald-600 rounded-md flex-shrink-0"></div>
+        <p class="text-slate-900 font-bold text-sm">Stock Reservation</p>
+        <p class="text-slate-500 text-xs leading-relaxed">Orders auto-reserve flower quantities, keeping available and committed stock clearly visible across the whole team.</p>
+      </div>
+
+      <!-- 6. Waste Analytics -->
+      <div class="bg-slate-50 rounded-2xl p-5 flex flex-col gap-2">
+        <div class="w-6 h-6 bg-emerald-600 rounded-md flex-shrink-0"></div>
+        <p class="text-slate-900 font-bold text-sm">Waste Analytics</p>
+        <p class="text-slate-500 text-xs leading-relaxed">Track spoilage history and demand patterns over time to sharpen purchasing decisions and measure real ROI.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
