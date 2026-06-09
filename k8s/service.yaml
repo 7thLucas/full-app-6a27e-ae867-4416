@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: xxt1ts5v-4416-staging-svc
+  namespace: qb-prototypes
+spec:
+  selector:
+    app: xxt1ts5v-4416-staging
+  ports:
+  - port: 80
+    targetPort: 3000
