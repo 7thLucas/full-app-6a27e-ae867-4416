@@ -1,43 +1,92 @@
 <style>
-  .mode-landscape .sl-features-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
-  .mode-portrait .sl-features-grid { display: flex; flex-direction: column; gap: 1rem; }
+  .mode-landscape .sl-features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+  .mode-portrait .sl-features-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
 </style>
 <section class="w-full h-full overflow-auto bg-white p-10">
-  <div class="flex items-center justify-between mb-2">
-    <p class="text-xs font-semibold tracking-widest uppercase" style="color:#D946A6;">Core Capabilities</p>
-    <div class="flex items-center gap-1.5 px-2.5 py-1 border rounded-full" style="background-color:#D946A6; border-color:#D946A630;">
-      <span class="text-xs font-semibold" style="color:#ffffff;">Enabled</span>
-    </div>
+  <div class="flex items-center justify-between mb-3">
+    <p class="text-emerald-600 text-xs font-bold tracking-widest uppercase">Core Capabilities</p>
+    <span class="inline-flex items-center gap-1.5 bg-emerald-600 text-white text-xs font-semibold px-3 py-1 rounded-full">Enabled</span>
   </div>
-  <h1 class="text-3xl font-bold text-slate-900 mb-4 leading-tight">Effortless Product Experience</h1>
-  <p class="text-slate-600 text-lg mb-8 max-w-2xl">Intuitive features designed for seamless adoption and long-term value delivery.</p>
+
+  <h1 class="text-3xl font-black text-slate-900 mb-3 leading-tight">Built for Every Role in the Shop</h1>
+
+  <div class="flex items-center gap-2 mb-6">
+    <span class="bg-emerald-600 text-white text-xs font-semibold px-3 py-1.5 rounded-full">Owner</span>
+    <span class="bg-slate-100 text-slate-500 text-xs font-semibold px-3 py-1.5 rounded-full">Staff</span>
+    <span class="bg-slate-100 text-slate-500 text-xs font-semibold px-3 py-1.5 rounded-full">Driver</span>
+  </div>
+
   <div class="sl-features-grid">
-    <div class="bg-gradient-to-br from-slate-50 to-white border border-slate-200 rounded-xl p-5 shadow-sm">
-          <div class="flex items-center gap-3 mb-3">
-            <div class="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center flex-shrink-0">
-               <span class="text-xl">✨</span>
-            </div>
-            <h3 class="font-bold text-slate-900 text-base">Inventory Dashboard</h3>
-          </div>
-          <p class="text-slate-600 text-sm leading-relaxed">View all flower stock by variety, freshness date, and location. Get real-time alerts when stock is approaching expiration and receive AI-powered suggestions for quick-move bundles or promotions.</p>
+    <div class="bg-gradient-to-br from-slate-50 to-white border border-slate-200 rounded-xl p-4 shadow-sm">
+      <div class="flex items-center gap-2 mb-2">
+        <div class="w-8 h-8 rounded-lg bg-emerald-100 flex items-center justify-center flex-shrink-0">
+          <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+          </svg>
         </div>
-        <div class="bg-gradient-to-br from-slate-50 to-white border border-slate-200 rounded-xl p-5 shadow-sm">
-          <div class="flex items-center gap-3 mb-3">
-            <div class="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center flex-shrink-0">
-               <span class="text-xl">✨</span>
-            </div>
-            <h3 class="font-bold text-slate-900 text-base">Order-to-Inventory Matcher</h3>
-          </div>
-          <p class="text-slate-600 text-sm leading-relaxed">When a custom bouquet order comes in, the system instantly shows which flowers are available and suggests the freshest combinations. Reduce search time and order-fulfillment errors.</p>
+        <h3 class="font-bold text-slate-900 text-sm">Smart Inventory</h3>
+      </div>
+      <p class="text-slate-500 text-xs leading-relaxed">Track every variety by stock qty, arrival date, and freshness window. Spoilage alerts and FIFO guidance ship oldest stock first.</p>
+    </div>
+
+    <div class="bg-gradient-to-br from-slate-50 to-white border border-slate-200 rounded-xl p-4 shadow-sm">
+      <div class="flex items-center gap-2 mb-2">
+        <div class="w-8 h-8 rounded-lg bg-emerald-100 flex items-center justify-center flex-shrink-0">
+          <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2"/>
+          </svg>
         </div>
-        <div class="bg-gradient-to-br from-slate-50 to-white border border-slate-200 rounded-xl p-5 shadow-sm">
-          <div class="flex items-center gap-3 mb-3">
-            <div class="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center flex-shrink-0">
-               <span class="text-xl">✨</span>
-            </div>
-            <h3 class="font-bold text-slate-900 text-base">Smart Delivery Scheduler</h3>
-          </div>
-          <p class="text-slate-600 text-sm leading-relaxed">Map delivery routes, optimize stop sequences, and auto-detect scheduling conflicts before they become customer issues. Ensure every arrangement arrives at peak freshness.</p>
+        <h3 class="font-bold text-slate-900 text-sm">Order Pipeline</h3>
+      </div>
+      <p class="text-slate-500 text-xs leading-relaxed">Capture orders linked to inventory. Full lifecycle: Intake → Prep → Ready → Dispatched → Delivered, with every step tracked.</p>
+    </div>
+
+    <div class="bg-gradient-to-br from-slate-50 to-white border border-slate-200 rounded-xl p-4 shadow-sm">
+      <div class="flex items-center gap-2 mb-2">
+        <div class="w-8 h-8 rounded-lg bg-emerald-100 flex items-center justify-center flex-shrink-0">
+          <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+          </svg>
         </div>
+        <h3 class="font-bold text-slate-900 text-sm">Delivery Scheduling</h3>
+      </div>
+      <p class="text-slate-500 text-xs leading-relaxed">Calendar-based scheduling with time-slot booking, driver assignment, and area-grouped routing for efficient runs.</p>
+    </div>
+
+    <div class="bg-gradient-to-br from-amber-50 to-white border border-amber-100 rounded-xl p-4 shadow-sm">
+      <div class="flex items-center gap-2 mb-2">
+        <div class="w-8 h-8 rounded-lg bg-amber-100 flex items-center justify-center flex-shrink-0">
+          <svg class="w-4 h-4 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+          </svg>
+        </div>
+        <h3 class="font-bold text-slate-900 text-sm">Spoilage Intelligence</h3>
+      </div>
+      <p class="text-slate-500 text-xs leading-relaxed">At-risk stock surfaced proactively — days-to-expiry counters, waste history, and same-day promotion recommendations.</p>
+    </div>
+
+    <div class="bg-gradient-to-br from-slate-50 to-white border border-slate-200 rounded-xl p-4 shadow-sm">
+      <div class="flex items-center gap-2 mb-2">
+        <div class="w-8 h-8 rounded-lg bg-emerald-100 flex items-center justify-center flex-shrink-0">
+          <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+          </svg>
+        </div>
+        <h3 class="font-bold text-slate-900 text-sm">Inventory Reservation</h3>
+      </div>
+      <p class="text-slate-500 text-xs leading-relaxed">Soft-reserve quantities the moment an order is created. Real-time team visibility into available vs. committed stock.</p>
+    </div>
+
+    <div class="bg-gradient-to-br from-slate-50 to-white border border-slate-200 rounded-xl p-4 shadow-sm">
+      <div class="flex items-center gap-2 mb-2">
+        <div class="w-8 h-8 rounded-lg bg-emerald-100 flex items-center justify-center flex-shrink-0">
+          <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+          </svg>
+        </div>
+        <h3 class="font-bold text-slate-900 text-sm">Waste Analytics</h3>
+      </div>
+      <p class="text-slate-500 text-xs leading-relaxed">Track spoilage history and demand patterns over time to sharpen purchasing decisions and right-size order quantities.</p>
+    </div>
   </div>
 </section>
